@@ -28,6 +28,7 @@ logout
 ```./run.sh``` 
 
 On success, you should be logged into the docker container, and be in the workspace directory. Make sure any files you create are saved somewhere in the workspace.
+
 ![alt text](docs/docker.png)
 
 > [!CAUTION]
