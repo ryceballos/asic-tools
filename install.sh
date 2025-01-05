@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 if ! $(which docker); then
     echo Please install docker https://www.docker.com/products/docker-desktop/
     echo If running on WSL, install docker desktop on windows. You might have to enable the docker/wsl integration in the docker desktop settings.
