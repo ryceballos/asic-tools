@@ -17,9 +17,17 @@ Start by __forking__ this repository, __not__ cloning it. This will create a cop
 >![alt text](docs/clone.png)
 
 ## Using the Tools
-All of the tools you need are bundled in a docker container. To enter that container, `cd` into this repository and type:
-`./run.sh` 
-On success, you should be logged into the docker container, and be in the workspace directory.
+### Installing Container
+All of the tools you need are bundled in a docker container. To install that container for the first time, `cd` into this repository, run the install script, and log out:
+```
+sudo ./install.sh
+logout
+```
+### Using Container
+ To enter the container, `cd` into this repository and type:
+```./run.sh``` 
+
+On success, you should be logged into the docker container, and be in the workspace directory. Make sure any files you create are saved somewhere in the workspace.
 ![alt text](docs/docker.png)
 
 > [!CAUTION]
