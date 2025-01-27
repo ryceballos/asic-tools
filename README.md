@@ -9,12 +9,11 @@ It is highly recommended to use SSH keys to authenticate with github. Generate a
 - [Generating SSH Key](https://docs.github.com/en/enterprise-server@3.12/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [Adding SSH Key to Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-Start by __forking__ this repository, __not__ cloning it. This will create a copy that you own. Then, you can clone and edit your copy of it.
->#### Forking:
->![alt text](docs/fork.png)
+Start by cloning this repository. 
 
 >#### Cloning:
 >![alt text](docs/clone.png)
+Then Type: `git clone <paste url here>`
 
 ## Using the Tools
 ### Installing Container
