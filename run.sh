@@ -33,7 +33,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         -e DISPLAY=host.docker.internal:0 \
         -e "TERM=$TERM"\
         --hostname $HOST \
-        $CONTAINER bash
+        $CONTAINER -s bash
 
 # Linux/WSL Install
 else 
