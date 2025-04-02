@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -x
 if ! $(which docker); then
     echo Please install docker https://www.docker.com/products/docker-desktop/
     echo If running on WSL, install docker desktop on windows. You might have to enable the docker/wsl integration in the docker desktop settings.
@@ -21,7 +22,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 
 fi
 
-docker pull --platform linux/amd64 fwilken/asic:latest
+docker pull fwilken/asic:alpha
 if ! [ $? -eq 0 ]; then
     sudo groupadd docker || true
     sudo usermod -aG docker $USER

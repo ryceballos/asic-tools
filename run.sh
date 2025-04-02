@@ -7,7 +7,7 @@ ABS_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" && pwd )
 if [ "$1" = "-l" ] || [ "$1" = "--local" ]; then
     CONTAINER=asic
 else 
-    CONTAINER=fwilken/asic:latest
+    CONTAINER=fwilken/asic:alpha
 fi
 
 TERM=xterm-256color
@@ -26,10 +26,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     xhost +localhost
 
     docker run -it --rm \
-	--platform linux/amd64 \
         -v $ABS_DIR/workspace:/home/$HOST/workspace:rw \
         -v ~/.ssh:/home/$HOST/.ssh\
-        -v ~/.gitconfig:/home/$HOST/.gitconfig\
+        -v ~/.gitconfig:/home/$HOST/.gitconfig \
         -e DISPLAY=host.docker.internal:0 \
         -e "TERM=$TERM"\
         --hostname $HOST \
@@ -42,7 +41,7 @@ else
     docker run -it --rm \
                 -v $ABS_DIR/workspace:/home/$HOST/workspace:rw\
                 -v ~/.ssh:/home/$HOST/.ssh\
-                -v ~/.gitconfig:/home/$HOST/.gitconfig\
+                -v ~/.gitconfig:/home/$HOST/.gitconfig \
                 -v /tmp/.X11-unix:/tmp/.X11-unix \
                 -v /mnt/wslg:/mnt/wslg \
                 -e DISPLAY \
