@@ -5,6 +5,12 @@ Welcome to Open Source ASIC Design!
 Follow the [Docker Installation](https://github.com/Cal-Poly-Open-Source-ASIC-Class) instructions to make sure docker is installed. If you are on Windows, you should be using WSL for all of this.
 
 ## Github Setup
+Within WSL/Mac, configure your username and email for github:
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
 It is highly recommended to use SSH keys to authenticate with github. Generate a key and add it to github:
 - [Generating SSH Key](https://docs.github.com/en/enterprise-server@3.12/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [Adding SSH Key to Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
